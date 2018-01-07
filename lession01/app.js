@@ -1,8 +1,20 @@
-const fruits = ['Apple', 'Pear', 'Cherry'];
+const strings = ['1','2','3','4','5'];
 
-for (let index = 0; index < fruits.length; index++) {
-    const element = fruits[index];
-    console.log(element);
-}
+const numbers = strings.map(string => parseInt(string,10));
 
-fruits.forEach(fruit => console.log(fruit));
+console.log(numbers);
+
+// ================================================
+
+const fruits = ['apple', 'pear', 'cherry'];
+
+const capitalize = fruits.map(fruit => fruit.toUpperCase());
+
+console.log(capitalize);
+
+// ===================================================
+const prices = [5, 4.23, 6.4, 8.09, 3.20];
+
+const displayPrice = prices.map(price => `$${price.toFixed(2)}`);
+
+console.log(displayPrice);
