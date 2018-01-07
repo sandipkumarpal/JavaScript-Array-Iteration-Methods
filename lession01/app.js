@@ -1,8 +1,9 @@
-const fruits = ['Apple', 'Pear', 'Cherry'];
+const movies = [
+    ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters'],
+    ['Finding Dory'],
+    ['Jaws', 'On the Waterfront']
+  ]
 
-for (let index = 0; index < fruits.length; index++) {
-    const element = fruits[index];
-    console.log(element);
-}
+  const arrMovie = movies.reduce((array, movie) => [...array, ...movie], []);
 
-fruits.forEach(fruit => console.log(fruit));
+  console.log(arrMovie);
