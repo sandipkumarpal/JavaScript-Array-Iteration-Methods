@@ -1,8 +1,7 @@
-const fruits = ['Apple', 'Pear', 'Cherry'];
+const arr = [1,2,3];
 
-for (let index = 0; index < fruits.length; index++) {
-    const element = fruits[index];
-    console.log(element);
-}
+const arryAdd = arr
+    .filter(number => number !== 2)
+    .map(number => number + 1);
 
-fruits.forEach(fruit => console.log(fruit));
+console.log(arryAdd);
