@@ -1,8 +1,12 @@
-const fruits = ['Apple', 'Pear', 'Cherry'];
+const names = ['Selma', 'Ted', 'Mike', 'Sam', 'Sharon', 'Marvin'];
 
-for (let index = 0; index < fruits.length; index++) {
-    const element = fruits[index];
-    console.log(element);
-}
+// const sNames = names.filter(name => {
+//     if (name.charAt(0) === 'S') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
+const sNames = names.filter(name => name.charAt(0) === 'S');
 
-fruits.forEach(fruit => console.log(fruit));
+console.log(sNames);
